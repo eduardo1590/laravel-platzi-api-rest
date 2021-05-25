@@ -16,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return PostResource::collection(Post::latest()->paginate());
     }
 
     /**
@@ -61,6 +61,6 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        // response()->json
     }
 }

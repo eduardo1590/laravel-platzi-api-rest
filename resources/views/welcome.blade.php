@@ -12,7 +12,7 @@
             @foreach ($posts as $post)
             <div class="bg-white hover:bg-blue-100 border border-gray200 p-5">
                 <h2 class="font-bold.text-lg.mb-4">{{ $post->title }}</h2>
-                <p class="text-xs">{{ $post->excerp }}</p>
+                <p class="text-xs">{{ $post->excerpt }}</p>
                 <p class="text-xs text-right">{{ $post->published_at }}</p>    
             </div>
             @endforeach

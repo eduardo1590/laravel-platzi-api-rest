@@ -61,6 +61,9 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        // response()->json
+        $post->delete();
+        return response()->json([
+            'message' => 'Se ha eliminado el registro'
+        ], 204);
     }
 }

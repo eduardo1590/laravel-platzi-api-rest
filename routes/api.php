@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 });*/
 
-Route::apiResource('v1/posts', App\Http\Controllers\Api\V1\PostController::class)->only(['index','show']);
+Route::apiResource('v1/posts', App\Http\Controllers\Api\V1\PostController::class)->only(['index','show', 'destroy']);
